@@ -9,23 +9,26 @@
 
       <div id = notDevoured>
 
-        <h2>Burgers that aren't devoured!</h2>
+        
+          <h2>Burgers that aren't devoured!</h2>
 
-        <div class="list">
+          <div class="list">
 
-          <ol>
-            {{#each burgers}}
-              {{#unless devoured}}
-                <li>
-                  <img src=/assets/img/burger.jpg alt="burger" height="55" width="60">
-                  {{this.burger_name}}
-                  <button id = {{this.id}} class = "btn btn-default devourBtn">Devour</button>
-                </li>
-              {{/unless}}
-            {{/each}}
-          </ol>
+            <ol>
+              {{#each burgers}}
+                {{#unless devoured}}
+                  <li>
+                    <img src=/assets/img/burger.jpg alt="burger" height="55" width="60">
+                    {{this.burger_name}}
+                    <button id = {{this.id}} class = "btn btn-default devourBtn">Devour</button>
+                  </li>
+                {{/unless}}
+              {{/each}}
+            </ol>
 
-        </div>
+          </div>
+
+        
 
       </div>
 

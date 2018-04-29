@@ -12,13 +12,14 @@ var orm = {
     	});
 	},
 	insertOne: function(table, col, nameInput, cb){
-		var queryString = "INSERT INTO burgers (burger_name) VALUES ('Burger')";
+		var queryString = "INSERT INTO burgers ( " + col + " ) VALUES ('" + nameInput + "')";
+						   // INSERT INTO burgers (burger_name) VALUES ('Big Burger');
 		console.log(col, nameInput);
 		// var name = nameInput.name;
 		// console.log(name);
-	    queryString += "VALUES (";
-	    queryString += nameInput;
-	    queryString += "); ";
+	    // queryString += "VALUES (";
+	    // queryString += nameInput;
+	    // queryString += "); ";
 
 	    console.log(queryString);
 
