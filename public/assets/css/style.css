@@ -1,0 +1,21 @@
+#notDevoured,
+#devoured,
+#newBurger{
+	/*text-align: center;*/
+	/*margin: auto;*/
+	/*background-color: blue;*/
+	margin: 10px;
+	border: 1px black solid;
+	/*width: 100%;*/
+}
+
+li{
+	display: block;
+	margin: 10px;
+	/*text-align: left;*/
+	font-size: 22px;
+}
+
+.container{
+	text-align: center;
+}
