@@ -11,6 +11,7 @@ var connection;
 //   database: "burgers_db"
 // });
 
+// app crashs when no db exists
 if(process.env.JAWSDB_URL){
   connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
